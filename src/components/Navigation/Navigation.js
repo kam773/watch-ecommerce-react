@@ -7,7 +7,7 @@ export default function Navigation() {
   return (
       <React.Fragment>
           <div className="brand">
-              <h1 className="text-center my-5">Luxury Watches</h1>
+              <h1 className="text-center my-5 brand-header">Luxury Watches</h1>
           </div>
           <NavWapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
               {/*
@@ -36,22 +36,23 @@ const NavWapper = styled.nav`
 .brand {
   width: 100%;
   display: block;
-  &h1 {
-    font-family: 'Poppins', sans-serif;
-    color: #FFD700;
-    font-weight: 300;
+
+}
+.brand-header {
+  text-transform: uppercase!important;
+  color: #FFD700!important;
+
+}
+ul {
+  list-style: none;
+  li{
+    display: inline-block;
   }
 }
-    ul {
-      list-style: none;
-      li{
-        display: inline-block;
-      }
-    }
-    .nav-link {
-      color: #000!important;
-      font-size: 1.2rem;
+.nav-link {
+  color: #000!important;
+  font-size: 1.2rem;
 
-    }
+}
 
 `;

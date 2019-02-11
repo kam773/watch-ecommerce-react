@@ -6,7 +6,7 @@ export default function Form() {
       <FormWrapper>
           <form>
               <div className="form-inline">
-                  <input class="form-control" id="search" type="text" placeholder="Search" />
+                  <input className="form-control" id="search" type="text" placeholder="Search" />
                   <button type="submit"><i className="fas fa-search"></i></button>
               </div>
           </form>

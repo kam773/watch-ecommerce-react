@@ -12,8 +12,10 @@ export default function Header() {
                     Creative Commons (Attribution 3.0 Unported);
                     https://www.iconfinder.com/Makoto_msk */}
               <div className="cart">
-                  <Link to="/cart" className="nav-link"><i className="fas fa-cart-plus" style={ { color: '#fff', fontSize: '1.6rem' } }></i></Link>
-                  <span style={ { color: '#fff', fontSize: '1.6rem' } }>$0.00</span>
+                  <Link to="/cart" className="nav-link">
+                      <i className="fas fa-cart-plus" style={ { color: '#fff', fontSize: '1.6rem', marginRight: '10px' } }></i>
+                      <span style={ { color: '#fff', fontSize: '1.6rem' } }>$0.00</span>
+                  </Link>
               </div>
           </HeaderWapper>
           <Navigation/>
