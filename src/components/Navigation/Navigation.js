@@ -21,7 +21,7 @@ export default function Navigation() {
                   <li className="nav-item ml-5"><Link className="nav-link" to="/kids">Kids</Link></li>
                   <li className="nav-item ml-5"><Link className="nav-link" to="/contact">Contact</Link></li>
               </ul>
-              <div className="search-box">
+              <div className="search-box m-3">
                   <Form/>
               </div>
           </NavWapper>
@@ -53,4 +53,5 @@ const NavWapper = styled.nav`
       font-size: 1.2rem;
 
     }
+
 `;

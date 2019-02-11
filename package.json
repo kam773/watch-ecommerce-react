@@ -42,9 +42,13 @@
     "postcss-preset-env": "6.5.0",
     "postcss-safe-parser": "4.0.1",
     "react": "^16.8.1",
+    "react-animated-slider": "^1.1.4",
     "react-app-polyfill": "^0.2.1",
     "react-dev-utils": "^7.0.2",
     "react-dom": "^16.8.1",
+    "react-flexible-carousel": "^1.2.6",
+    "react-image-show": "^0.2.4",
+    "react-responsive-carousel": "^3.1.47",
     "react-router-dom": "^4.3.1",
     "react-slick": "^0.23.2",
     "resolve": "1.10.0",
@@ -121,5 +125,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0"
   }
 }

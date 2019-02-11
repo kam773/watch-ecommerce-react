@@ -20,6 +20,7 @@ button {
     outline: none;
     border: 1px solid #000;
     padding: 0.4rem 0.6rem;
+    cursor: pointer;
 }
 input {
     border: 1px solid #000;
