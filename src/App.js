@@ -8,6 +8,7 @@ import MenSection from './components/MenSection/MenSection';
 import WomenSection from './components/WomenSection/WomenSection';
 import ChildrenSection from './components/ChildrenSection/ChildrenSection';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class App extends React.Component {
                 <Route exact path="/kids" component={ ChildrenSection }/>
                 <Route exact path="/contact" component={ Contact }/>
             </Switch>
+            <Footer/>
         </React.Fragment>
     )
   }
