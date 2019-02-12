@@ -7,7 +7,7 @@ import './style.css';
 export default class MySlider extends Component {
   render() {
     const settings = {
-      dots: false,
+      dots: true,
       arrows: false,
       infinite: true,
       slidesToShow: 1,
