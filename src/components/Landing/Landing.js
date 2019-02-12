@@ -4,6 +4,10 @@ import styled from 'styled-components';
 import Banner1 from '../../img/abt-1.jpg';
 import Banner2 from '../../img/abt-2.jpg';
 import Banner3 from '../../img/abt-3.jpg';
+import img1 from '../../img/p-4.png';
+import img2 from '../../img/p-2.png';
+import img3 from '../../img/p-6.png';
+import img4 from '../../img/p-7.png';
 
 export default function Landing() {
   return (
@@ -43,16 +47,135 @@ export default function Landing() {
                     <h1 className="text-center text-black text-capitalize my-3">featured products</h1>
                     <div className="row">
                             <div className="col-md-3">
-
+                                <div className="card">
+                                    <div className="img-container p-5">
+                                        <img src={ img1 } alt="Product"/>
+                                    </div>
+                                    <a href="#" className="cart-btn">
+                                        <i className="fas fa-cart-plus"></i>
+                                    </a>
+                                        {/* Card footer */}
+                                    <div className = "card-footer d-flex justify-content-between">
+                                            <p className = "align-self-center mb-0">CASSIO Classic</p>
+                                            <h5 className = "text-blue font-italic mb-0" >
+                                                <span className = "mr-1" > $ 89 </span></h5>
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-md-3">
-
+                            <div className="card">
+                                    <div className="img-container p-5">
+                                        <img src={ img2 } alt="Product"/>
+                                    </div>
+                                    <a href="#" className="cart-btn">
+                                        <i className="fas fa-cart-plus"></i>
+                                    </a>
+                                        {/* Card footer */}
+                                    <div className = "card-footer d-flex justify-content-between">
+                                            <p className = "align-self-center mb-0">ATLANTIC sealine</p>
+                                            <h5 className = "text-blue font-italic mb-0" >
+                                                <span className = "mr-1" > $ 199 </span></h5>
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-md-3">
-
+                            <div className="card">
+                                    <div className="img-container p-5">
+                                        <img src={ img3 } alt="Product"/>
+                                    </div>
+                                    <a href="#" className="cart-btn">
+                                        <i className="fas fa-cart-plus"></i>
+                                    </a>
+                                        {/* Card footer */}
+                                    <div className = "card-footer d-flex justify-content-between">
+                                            <p className = "align-self-center mb-0">FESTINA Multifunction</p>
+                                            <h5 className = "text-blue font-italic mb-0" >
+                                                <span className = "mr-1" > $ 169 </span></h5>
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-md-3">
-
+                            <div className="card">
+                                    <div className="img-container p-5">
+                                        <img src={ img4 } alt="Product"/>
+                                    </div>
+                                    <a href="#" className="cart-btn">
+                                        <i className="fas fa-cart-plus"></i>
+                                    </a>
+                                        {/* Card footer */}
+                                    <div className = "card-footer d-flex justify-content-between">
+                                            <p className = "align-self-center mb-0">SEIKO Prospex</p>
+                                            <h5 className = "text-blue font-italic mb-0" >
+                                                <span className = "mr-1" > $ 189 </span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <h1 className="text-center text-black text-capitalize my-3">Best Sellers</h1>
+                    <div className="row">
+                            <div className="col-md-3">
+                                <div className="card">
+                                    <div className="img-container p-5">
+                                        <img src={ img2 } alt="Product"/>
+                                    </div>
+                                    <a href="#" className="cart-btn">
+                                        <i className="fas fa-cart-plus"></i>
+                                    </a>
+                                        {/* Card footer */}
+                                    <div className = "card-footer d-flex justify-content-between">
+                                            <p className = "align-self-center mb-0">FESTINA Multifunction</p>
+                                            <h5 className = "text-blue font-italic mb-0" >
+                                                <span className = "mr-1" > $ 169 </span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-3">
+                            <div className="card">
+                                    <div className="img-container p-5">
+                                        <img src={ img4 } alt="Product"/>
+                                    </div>
+                                    <a href="#" className="cart-btn">
+                                        <i className="fas fa-cart-plus"></i>
+                                    </a>
+                                        {/* Card footer */}
+                                    <div className = "card-footer d-flex justify-content-between">
+                                            <p className = "align-self-center mb-0">SEIKO Prospex</p>
+                                            <h5 className = "text-blue font-italic mb-0" >
+                                                <span className = "mr-1" > $ 189 </span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-3">
+                            <div className="card">
+                                    <div className="img-container p-5">
+                                        <img src={ img1 } alt="Product"/>
+                                    </div>
+                                    <a href="#" className="cart-btn">
+                                        <i className="fas fa-cart-plus"></i>
+                                    </a>
+                                        {/* Card footer */}
+                                    <div className = "card-footer d-flex justify-content-between">
+                                            <p className = "align-self-center mb-0">CASSIO Classic</p>
+                                            <h5 className = "text-blue font-italic mb-0" >
+                                                <span className = "mr-1" > $ 169 </span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-3">
+                            <div className="card">
+                                    <div className="img-container p-5">
+                                        <img src={ img3 } alt="Product"/>
+                                    </div>
+                                    <a href="#" className="cart-btn">
+                                        <i className="fas fa-cart-plus"></i>
+                                    </a>
+                                        {/* Card footer */}
+                                    <div className = "card-footer d-flex justify-content-between">
+                                            <p className = "align-self-center mb-0">ATLANTIC sealine</p>
+                                            <h5 className = "text-blue font-italic mb-0" >
+                                                <span className = "mr-1" > $ 199 </span></h5>
+                                    </div>
+                                </div>
                             </div>
                     </div>
               </div>
@@ -116,6 +239,9 @@ const SliderContainer = styled.div`
         margin-top: 30px;
         line-height: 1.4;
     }
-
-
+    .cart-btn {
+        padding: .5rem 1rem;
+        color: #000!important;
+        font-size: 1.2rem;
+    }
 `;
