@@ -62,7 +62,7 @@ export const storeProducts = [
     {
       id: 6,
       title: 'TIMEX Fairfield',
-      img: 'img/product-6.png',
+      img: 'img/p-6.png',
       price: 179,
       company: 'TIMEX',
       info:
@@ -73,8 +73,8 @@ export const storeProducts = [
     },
     {
       id: 7,
-      title: 'ORIENT STAR Open Heart',
-      img: 'img/product-7.png',
+      title: 'ORIENT STAR O/H',
+      img: 'img/p-7.png',
       price: 300,
       company: 'ORIENT STAR',
       info:
@@ -86,7 +86,7 @@ export const storeProducts = [
     {
       id: 8,
       title: 'LE TEMPS Zafira',
-      img: 'img/product-8.png',
+      img: 'img/p-8.png',
       price: 200,
       company: 'LE TEMPS',
       info:
@@ -99,7 +99,7 @@ export const storeProducts = [
 
 export const detailProduct = {
   id: 1,
-  title: 'ORIENT STAR Open Heart',
+  title: 'ORIENT STAR O/H',
   img: 'img/p-1.png',
   price: 10,
   company: 'ORIENT STAR',

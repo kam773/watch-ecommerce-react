@@ -42,7 +42,18 @@ export default function Landing() {
                     </div>
                     <h1 className="text-center text-black text-capitalize my-3">featured products</h1>
                     <div className="row">
+                            <div className="col-md-3">
 
+                            </div>
+                            <div className="col-md-3">
+
+                            </div>
+                            <div className="col-md-3">
+
+                            </div>
+                            <div className="col-md-3">
+
+                            </div>
                     </div>
               </div>
 
@@ -74,6 +85,12 @@ const SliderContainer = styled.div`
     }
     .img-wrapper:hover figcaption {
         opacity: .8;
+    }
+    .img-wrapper:hover figcaption h4 {
+        opacity: 1;
+    }
+    .img-wrapper:hover figcaption p {
+        opacity: 1;
     }
     figcaption h4 {
         color: #fff;

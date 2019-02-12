@@ -6,18 +6,27 @@ export default class ProductProvider extends Component {
     state = {
         products: storeProducts,
         detailProduct: detailProduct,
-        cart: [],
-        modalOpen: false,
-        modalProduct: detailProduct,
-        cartSubTotal: 0,
-        cartTaxt: 0,
-        cartTotal: 0
+    }
+    handleDetail = () => {
+        console.log("yo");
+    }
+    addToCart = () => {
+        console.log("oyo");
     }
   render() {
     return (
-      <div>
+        <ProductContext.Provider value={{
+            ...this.state,
+            handleDetail:this.handleDetail,
+            addToCart:this.addToCart
+        }}>
 
-      </div>
+              {this.props.children}
+        </ProductContext.Provider>
     )
   }
 }
+
+const ProductConsumer = ProductContext.Consumer;
+
+export { ProductProvider, ProductConsumer }
