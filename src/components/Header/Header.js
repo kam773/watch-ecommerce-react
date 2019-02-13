@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default function Header() {
+    // const { cartTotal } = value;
   return (
       <React.Fragment>
           <HeaderWapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
@@ -14,7 +15,7 @@ export default function Header() {
               <div className="cart">
                   <Link to="/cart" className="nav-link">
                       <i className="fas fa-cart-plus" style={ { color: '#fff', fontSize: '1.6rem', marginRight: '10px' } }></i>
-                      <span style={ { color: '#fff', fontSize: '1.6rem' } }>$0.00</span>
+                      <span style={ { color: '#fff', fontSize: '1.6rem' } }>${0}</span>
                   </Link>
               </div>
           </HeaderWapper>

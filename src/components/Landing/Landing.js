@@ -49,11 +49,13 @@ export default function Landing() {
                             <div className="col-md-3">
                                 <div className="card">
                                     <div className="img-container p-5">
-                                        <img src={ img1 } alt="Product"/>
+                                        <img src={ img1 } alt="Product" className="card-img-top"/>
                                     </div>
-                                    <a href="#" className="cart-btn">
-                                        <i className="fas fa-cart-plus"></i>
-                                    </a>
+                                    <button
+                                        className="cart-btn"
+                                        >
+                                       <i className="fas fa-cart-plus"></i>
+                                    </button>
                                         {/* Card footer */}
                                     <div className = "card-footer d-flex justify-content-between">
                                             <p className = "align-self-center mb-0">CASSIO Classic</p>
@@ -65,11 +67,13 @@ export default function Landing() {
                             <div className="col-md-3">
                             <div className="card">
                                     <div className="img-container p-5">
-                                        <img src={ img2 } alt="Product"/>
+                                        <img src={ img2 } alt="Product" className="card-img-top"/>
                                     </div>
-                                    <a href="#" className="cart-btn">
-                                        <i className="fas fa-cart-plus"></i>
-                                    </a>
+                                    <button
+                                        className="cart-btn"
+                                        >
+                                       <i className="fas fa-cart-plus"></i>
+                                    </button>
                                         {/* Card footer */}
                                     <div className = "card-footer d-flex justify-content-between">
                                             <p className = "align-self-center mb-0">ATLANTIC sealine</p>
@@ -81,11 +85,13 @@ export default function Landing() {
                             <div className="col-md-3">
                             <div className="card">
                                     <div className="img-container p-5">
-                                        <img src={ img3 } alt="Product"/>
+                                        <img src={ img3 } alt="Product" className="card-img-top"/>
                                     </div>
-                                    <a href="#" className="cart-btn">
-                                        <i className="fas fa-cart-plus"></i>
-                                    </a>
+                                    <button
+                                        className="cart-btn"
+                                        >
+                                       <i className="fas fa-cart-plus"></i>
+                                    </button>
                                         {/* Card footer */}
                                     <div className = "card-footer d-flex justify-content-between">
                                             <p className = "align-self-center mb-0">FESTINA Multifunction</p>
@@ -97,11 +103,13 @@ export default function Landing() {
                             <div className="col-md-3">
                             <div className="card">
                                     <div className="img-container p-5">
-                                        <img src={ img4 } alt="Product"/>
+                                        <img src={ img4 } alt="Product" className="card-img-top"/>
                                     </div>
-                                    <a href="#" className="cart-btn">
-                                        <i className="fas fa-cart-plus"></i>
-                                    </a>
+                                    <button
+                                        className="cart-btn"
+                                        >
+                                       <i className="fas fa-cart-plus"></i>
+                                    </button>
                                         {/* Card footer */}
                                     <div className = "card-footer d-flex justify-content-between">
                                             <p className = "align-self-center mb-0">SEIKO Prospex</p>
@@ -116,11 +124,13 @@ export default function Landing() {
                             <div className="col-md-3">
                                 <div className="card">
                                     <div className="img-container p-5">
-                                        <img src={ img2 } alt="Product"/>
+                                        <img src={ img2 } alt="Product" className="card-img-top"/>
                                     </div>
-                                    <a href="#" className="cart-btn">
-                                        <i className="fas fa-cart-plus"></i>
-                                    </a>
+                                    <button
+                                        className="cart-btn"
+                                        >
+                                       <i className="fas fa-cart-plus"></i>
+                                    </button>
                                         {/* Card footer */}
                                     <div className = "card-footer d-flex justify-content-between">
                                             <p className = "align-self-center mb-0">FESTINA Multifunction</p>
@@ -132,11 +142,13 @@ export default function Landing() {
                             <div className="col-md-3">
                             <div className="card">
                                     <div className="img-container p-5">
-                                        <img src={ img4 } alt="Product"/>
+                                        <img src={ img4 } alt="Product" className="card-img-top"/>
                                     </div>
-                                    <a href="#" className="cart-btn">
-                                        <i className="fas fa-cart-plus"></i>
-                                    </a>
+                                    <button
+                                        className="cart-btn"
+                                        >
+                                       <i className="fas fa-cart-plus"></i>
+                                    </button>
                                         {/* Card footer */}
                                     <div className = "card-footer d-flex justify-content-between">
                                             <p className = "align-self-center mb-0">SEIKO Prospex</p>
@@ -148,11 +160,13 @@ export default function Landing() {
                             <div className="col-md-3">
                             <div className="card">
                                     <div className="img-container p-5">
-                                        <img src={ img1 } alt="Product"/>
+                                        <img src={ img1 } alt="Product" className="card-img-top"/>
                                     </div>
-                                    <a href="#" className="cart-btn">
-                                        <i className="fas fa-cart-plus"></i>
-                                    </a>
+                                    <button
+                                        className="cart-btn"
+                                        >
+                                       <i className="fas fa-cart-plus"></i>
+                                    </button>
                                         {/* Card footer */}
                                     <div className = "card-footer d-flex justify-content-between">
                                             <p className = "align-self-center mb-0">CASSIO Classic</p>
@@ -164,11 +178,13 @@ export default function Landing() {
                             <div className="col-md-3">
                             <div className="card">
                                     <div className="img-container p-5">
-                                        <img src={ img3 } alt="Product"/>
+                                        <img src={ img3 } alt="Product" className="card-img-top"/>
                                     </div>
-                                    <a href="#" className="cart-btn">
-                                        <i className="fas fa-cart-plus"></i>
-                                    </a>
+                                    <button
+                                        className="cart-btn"
+                                        >
+                                       <i className="fas fa-cart-plus"></i>
+                                    </button>
                                         {/* Card footer */}
                                     <div className = "card-footer d-flex justify-content-between">
                                             <p className = "align-self-center mb-0">ATLANTIC sealine</p>
@@ -240,8 +256,21 @@ const SliderContainer = styled.div`
         line-height: 1.4;
     }
     .cart-btn {
-        padding: .5rem 1rem;
-        color: #000!important;
-        font-size: 1.2rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        text-align: right;
+        padding: .8rem;
+        font-size: 1.5rem;
     }
+    .img-container {
+        position: relative;
+        overflow: hidden;
+      }
+      .card-img-top {
+        transition: all .5s linear;
+      }
+      .img-container:hover .card-img-top {
+        transform: scale(1.2);
+      }
 `;

@@ -8,6 +8,7 @@ export default class ChildrenSection extends Component {
       <React.Fragment>
           <div className="py-5">
                 <div className="container">
+                <h1 className="text-center text-black text-capitalize my-3">Kid&apos;s Collection</h1>
                     <div className="row">
                         <ProductConsumer>
                             {value => {

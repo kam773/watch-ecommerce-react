@@ -100,7 +100,7 @@ input {
 button[type="submit"] {
     border: 1px solid #000;
     background: transparent;
-    padding: .5rem 1rem;
+    padding: .46rem 1rem;
     cursor: pointer;
 
 }

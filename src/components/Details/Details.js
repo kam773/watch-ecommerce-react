@@ -1,6 +1,8 @@
 import React from 'react'
 import { ProductConsumer } from '../../context';
 import { Link } from 'react-router-dom';
+import { ButtonContainer } from '../Button/Button';
+import styled from 'styled-components';
 
 
 const Details = () => {
@@ -9,7 +11,7 @@ const Details = () => {
             {(value) => {
              const { id, company, img, info, price, title, inCart } = value.detailProduct;
              return (
-                 <div className="container py-5">
+                 <DetailsWrapper className="container py-5">
                      { /* title */ }
                      <div className="row">
                          <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
@@ -20,7 +22,7 @@ const Details = () => {
                      { /* product info*/ }
                      <div className="row">
                          <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                             <img src={ img } className="img-fluid" alt="product"/>
+                             <img src={ img } className="img-fluid img-detail" alt="product"/>
                          </div>
                          <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                              <h1>model: { title }</h1>
@@ -42,11 +44,11 @@ const Details = () => {
                              { /* buttons*/ }
                              <div>
                                  <Link to="/">
-                                     <button>
+                                     <ButtonContainer>
                                             back to products
-                                     </button>
+                                     </ButtonContainer>
                                  </Link>
-                                 <button
+                                 <ButtonContainer
                                  cart
                                  disabled={ inCart?true:false }
                                  onClick={ ()=> {
@@ -54,15 +56,23 @@ const Details = () => {
                                     value.openModal(id);
                                  } }>
                                      { inCart ? "inCart" : "add to cart" }
-                                 </button>
+                                 </ButtonContainer>
                              </div>
                          </div>
                      </div>
-                 </div>
+                 </DetailsWrapper>
              )
             }}
         </ProductConsumer>
     )
 }
+
+const DetailsWrapper = styled.div`
+.img-detail {
+    width: 50%;
+    height: auto;
+}
+
+`;
 
 export default Details;

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export default function Contact() {
   return (
     <section className="container-fluid">
-        <h2 className="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+         <h1 className="text-center text-black text-capitalize my-3">Contact us</h1>
         <FormWrapper>
           <div className="row">
             <div className="col-md-4">

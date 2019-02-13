@@ -10,6 +10,8 @@ import ChildrenSection from './components/ChildrenSection/ChildrenSection';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Details from './components/Details/Details';
+import Modal from './components/Cart/Modal';
+import Cart from './components/Cart/Cart';
 
 class App extends React.Component {
   render() {
@@ -23,7 +25,9 @@ class App extends React.Component {
                 <Route exact path="/kids" component={ ChildrenSection }/>
                 <Route exact path="/contact" component={ Contact }/>
                 <Route path="/details" component={ Details }/>
+                <Route path="/cart"  component={ Cart }/>
             </Switch>
+            <Modal/>
             <Footer/>
         </React.Fragment>
     )
