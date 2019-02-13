@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
 export default function CartItem({ item, value }) {
     const { id, title, img, price, total, count } = item;
@@ -13,20 +14,20 @@ export default function CartItem({ item, value }) {
               alt="product"/>
           </div>
           <div className="col-10 mx-auto col-lg-2">
-              <span className="d-lg-none text-bold">product: </span>
+              <span className="d-lg-none">product: </span>
               { title }
           </div>
           <div className="col-10 mx-auto col-lg-2">
-              <span className="d-lg-none text-bold">price: </span>
+              <span className="d-lg-none">price: </span>
               { price }
           </div>
           <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
               <div className="d-flex justify-content-center">
-                  <div>
-                      <span className="btn btn-black mx-1 text-bold" onClick={ () => decrement(id) }>-</span>
-                      <span className="btn btn-black mx-1 text-bold">{ count }</span>
-                      <span className="btn btn-black mx-1 text-bold" onClick={ () => increment(id) }>+</span>
-                  </div>
+                  <ButtonWrapper>
+                      <span className="btn btn-black mx-1on>" onClick={ () => decrement(id) }>-</span>
+                      <span className="btn btn-black mx-1on>">{ count }</span>
+                      <span className="btn btn-black mx-1on>" onClick={ () => increment(id) }>+</span>
+                  </ButtonWrapper>
               </div>
           </div>
           {/*  */}
@@ -41,3 +42,16 @@ export default function CartItem({ item, value }) {
       </div>
   )
 }
+
+const ButtonWrapper =  styled.div`
+    .btn-black {
+        border: 1px solid #000;
+        transition: all .3s;
+        &:hover {
+            background: #000;
+            color: #fff;
+        }
+    }
+
+
+`;
