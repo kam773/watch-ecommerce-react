@@ -4,14 +4,14 @@ const ProductContext = React.createContext();
 
 export default class ProductProvider extends Component {
     state = {
-        products: [],
-        detailProduct: detailProduct,
-        cart: [],
-        modalOpen: false,
-        modalProduct: detailProduct,
-        cartSubTotal: 0,
-        cartTaxt: 0,
-        cartTotal: 0
+      products: storeProducts,
+      detailProduct: detailProduct,
+      cart: [],
+      modalOpen: false,
+      modalProduct: detailProduct,
+      cartSubTotal: 0,
+      cartTaxt: 0,
+      cartTotal: 0
     }
     componentDidMount(){
         this.setProducts();
@@ -149,7 +149,12 @@ export default class ProductProvider extends Component {
             ...this.state,
             handleDetail:this.handleDetail,
             addToCart:this.addToCart,
-
+            openModal: this.openModal,
+            closeModal: this.closeModal,
+            increment: this.increment,
+            decrement: this.decrement,
+            removeItem: this.removeItem,
+            clearCart: this.clearCart
         }}>
 
               {this.props.children}
