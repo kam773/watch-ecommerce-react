@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer';
 import Details from './components/Details/Details';
 import Modal from './components/Cart/Modal';
 import Cart from './components/Cart/Cart';
+import Default from './components/404/Default';
 
 class App extends React.Component {
   render() {
@@ -26,6 +27,7 @@ class App extends React.Component {
                 <Route exact path="/contact" component={ Contact }/>
                 <Route path="/details" component={ Details }/>
                 <Route path="/cart"  component={ Cart }/>
+                <Route component={ Default }/>
             </Switch>
             <Modal/>
             <Footer/>

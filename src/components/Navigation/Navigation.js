@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Form from '../Form/Form';
+import {Nav, Navbar} from 'react-bootstrap';
 
 export default function Navigation() {
   return (
@@ -9,25 +10,40 @@ export default function Navigation() {
           <div className="brand">
               <h1 className="text-center my-5 brand-header">Luxury Watches</h1>
           </div>
-          <NavWapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-              {/*
-              https://www.iconfinder.com/icons/1243689/call_phone_icon
-              Creative Commons (Attribution 3.0 Unported);
-              https://www.iconfinder.com/Makoto_msk */}
-              <ul className="navbar-nav">
-                  <li className="nav-item ml-5"><Link className="nav-link" to="/">Home</Link></li>
-                  <li className="nav-item ml-5"><Link className="nav-link" to="/men">Men</Link></li>
-                  <li className="nav-item ml-5"><Link className="nav-link" to="/women">Women</Link></li>
-                  <li className="nav-item ml-5"><Link className="nav-link" to="/kids">Kids</Link></li>
-                  <li className="nav-item ml-5"><Link className="nav-link" to="/contact">Contact</Link></li>
-              </ul>
-              <div className="search-box m-3">
-                  <Form/>
+          <NavWapper>
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-md-8">
+                    <Navbar className="mb-2" bg="white" variant="white">
+                      <Nav className="mr-auto">
+                        <Nav.Link href="#home"><Link className="nav-link" to="/">Home</Link></Nav.Link>
+                        <Nav.Link href="#features"><Link className="nav-link" to="/men">Men</Link></Nav.Link>
+                        <Nav.Link href="#pricing"><Link className="nav-link" to="/women">Women</Link></Nav.Link>
+                        <Nav.Link href="#pricing"><Link className="nav-link" to="/kids">Kids</Link></Nav.Link>
+                        <Nav.Link href="#pricing"><Link className="nav-link" to="/contact">Contact</Link></Nav.Link>
+                      </Nav>
+                    </Navbar>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="search-box mt-3">
+                          <Form/>
+                      </div>
+                    </div>
               </div>
+            </div>
+
           </NavWapper>
       </React.Fragment>
   )
 }
+
+{/* <ul className="navbar-nav">
+  <li className="nav-item ml-5"></li>
+  <li className="nav-item ml-5"></li>
+  <li className="nav-item ml-5"></li>
+  <li className="nav-item ml-5"><Link className="nav-link" to="/kids">Kids</Link></li>
+  <li className="nav-item ml-5"><Link className="nav-link" to="/contact">Contact</Link></li>
+</ul> */}
 
 const NavWapper = styled.nav`
   display: flex;

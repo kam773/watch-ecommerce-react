@@ -12,7 +12,7 @@
     "babel-plugin-named-asset-import": "^0.3.1",
     "babel-preset-react-app": "^7.0.1",
     "bfj": "6.1.1",
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.1",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "css-loader": "1.0.0",
     "dotenv": "6.0.0",
@@ -28,6 +28,7 @@
     "file-loader": "2.0.0",
     "fork-ts-checker-webpack-plugin": "1.0.0-alpha.6",
     "fs-extra": "7.0.1",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "identity-obj-proxy": "3.0.0",
     "jest": "23.6.0",
@@ -44,6 +45,7 @@
     "react": "^16.8.1",
     "react-animated-slider": "^1.1.4",
     "react-app-polyfill": "^0.2.1",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dev-utils": "^7.0.2",
     "react-dom": "^16.8.1",
     "react-paypal-express-checkout": "^1.0.5",
@@ -63,7 +65,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -126,5 +130,6 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0"
-  }
+  },
+  "homepage": "https://kam773.github.io/watch-ecommerce-react/"
 }
