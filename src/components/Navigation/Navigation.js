@@ -16,11 +16,11 @@ export default function Navigation() {
                     <div className="col-md-8">
                     <Navbar className="mb-2" bg="white" variant="white">
                       <Nav className="mr-auto">
-                        <Nav.Link href="#home"><Link className="nav-link" to="/">Home</Link></Nav.Link>
-                        <Nav.Link href="#features"><Link className="nav-link" to="/men">Men</Link></Nav.Link>
-                        <Nav.Link href="#pricing"><Link className="nav-link" to="/women">Women</Link></Nav.Link>
-                        <Nav.Link href="#pricing"><Link className="nav-link" to="/kids">Kids</Link></Nav.Link>
-                        <Nav.Link href="#pricing"><Link className="nav-link" to="/contact">Contact</Link></Nav.Link>
+                        <Nav.Link href="#home"><Link className="nav-link ml-3" to="/">Home</Link></Nav.Link>
+                        <Nav.Link href="#features"><Link className="nav-link ml-3" to="/men">Men</Link></Nav.Link>
+                        <Nav.Link href="#pricing"><Link className="nav-link ml-3" to="/women">Women</Link></Nav.Link>
+                        <Nav.Link href="#pricing"><Link className="nav-link ml-3" to="/kids">Kids</Link></Nav.Link>
+                        <Nav.Link href="#pricing"><Link className="nav-link ml-3" to="/contact">Contact</Link></Nav.Link>
                       </Nav>
                     </Navbar>
                     </div>
@@ -35,14 +35,6 @@ export default function Navigation() {
       </React.Fragment>
   )
 }
-
-{/* <ul className="navbar-nav">
-  <li className="nav-item ml-5"></li>
-  <li className="nav-item ml-5"></li>
-  <li className="nav-item ml-5"></li>
-  <li className="nav-item ml-5"><Link className="nav-link" to="/kids">Kids</Link></li>
-  <li className="nav-item ml-5"><Link className="nav-link" to="/contact">Contact</Link></li>
-</ul> */}
 
 const NavWapper = styled.nav`
   display: flex;
