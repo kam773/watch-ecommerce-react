@@ -1,0 +1,620 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing renders without crashes 1`] = `
+<div
+  className="sc-bdVaJa dYVmkF"
+>
+  <div
+    className="slider-container"
+  >
+    <div
+      className="slick-slider slick-initialized"
+      dir="ltr"
+    >
+      <div
+        className="slick-list"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={null}
+        onMouseMove={null}
+        onMouseUp={[Function]}
+        onTouchCancel={null}
+        onTouchEnd={[Function]}
+        onTouchMove={null}
+        onTouchStart={[Function]}
+        style={Object {}}
+      >
+        <div
+          className="slick-track"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <div
+            aria-hidden={false}
+            className="slick-slide slick-active slick-current"
+            data-index={0}
+            onClick={[Function]}
+            style={
+              Object {
+                "WebkitTransition": "opacity 500ms linear, visibility 500ms linear",
+                "left": -0,
+                "opacity": 1,
+                "outline": "none",
+                "position": "relative",
+                "transition": "opacity 500ms linear, visibility 500ms linear",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <div
+                className="img-wrapper"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <img
+                  alt="Banner"
+                  src="bnr-1.jpg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide"
+            data-index={1}
+            onClick={[Function]}
+            style={
+              Object {
+                "WebkitTransition": "opacity 500ms linear, visibility 500ms linear",
+                "left": -0,
+                "opacity": 0,
+                "outline": "none",
+                "position": "relative",
+                "transition": "opacity 500ms linear, visibility 500ms linear",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <div
+                className="img-wrapper"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <img
+                  alt="Banner"
+                  src="bnr-2.jpg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide"
+            data-index={2}
+            onClick={[Function]}
+            style={
+              Object {
+                "WebkitTransition": "opacity 500ms linear, visibility 500ms linear",
+                "left": -0,
+                "opacity": 0,
+                "outline": "none",
+                "position": "relative",
+                "transition": "opacity 500ms linear, visibility 500ms linear",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <div
+                className="img-wrapper"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <img
+                  alt="Banner"
+                  src="bnr-3.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul
+        className="slick-dots"
+        onMouseEnter={null}
+        onMouseLeave={null}
+        onMouseOver={null}
+        style={
+          Object {
+            "display": "block",
+          }
+        }
+      >
+        <li
+          className="slick-active"
+        >
+          <button
+            onClick={[Function]}
+          >
+            1
+          </button>
+        </li>
+        <li
+          className=""
+        >
+          <button
+            onClick={[Function]}
+          >
+            2
+          </button>
+        </li>
+        <li
+          className=""
+        >
+          <button
+            onClick={[Function]}
+          >
+            3
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="py-5"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-4"
+        >
+          <figure
+            className="img-wrapper hover-effect"
+          >
+            <img
+              alt="Banner"
+              className="img-responsive"
+              src="abt-1.jpg"
+            />
+            <figcaption>
+              <h4>
+                Nulla maximus nunc
+              </h4>
+              <p>
+                In sit amet sapien eros Integer dolore magna aliqua
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          className="col-md-4"
+        >
+          <figure
+            className="img-wrapper hover-effect"
+          >
+            <img
+              alt="Banner"
+              className="img-responsive"
+              src="abt-2.jpg"
+            />
+            <figcaption>
+              <h4>
+                Mauris erat augue
+              </h4>
+              <p>
+                In sit amet sapien eros Integer dolore magna aliqua
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          className="col-md-4"
+        >
+          <figure
+            className="img-wrapper hover-effect"
+          >
+            <img
+              alt="Banner"
+              className="img-responsive"
+              src="abt-3.jpg"
+            />
+            <figcaption>
+              <h4>
+                Cras elit mauris
+              </h4>
+              <p>
+                In sit amet sapien eros Integer dolore magna aliqua
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <h1
+        className="text-center text-black text-capitalize my-3"
+      >
+        featured products
+      </h1>
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="img-container p-5"
+            >
+              <img
+                alt="Product"
+                className="card-img-top"
+                src="p-4.png"
+              />
+            </div>
+            <button
+              className="cart-btn"
+            >
+              <i
+                className="fas fa-cart-plus"
+              />
+            </button>
+            <div
+              className="card-footer d-flex justify-content-between"
+            >
+              <p
+                className="align-self-center mb-0"
+              >
+                CASSIO Classic
+              </p>
+              <h5
+                className="text-blue font-italic mb-0"
+              >
+                <span
+                  className="mr-1"
+                >
+                   $ 89 
+                </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-md-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="img-container p-5"
+            >
+              <img
+                alt="Product"
+                className="card-img-top"
+                src="p-2.png"
+              />
+            </div>
+            <button
+              className="cart-btn"
+            >
+              <i
+                className="fas fa-cart-plus"
+              />
+            </button>
+            <div
+              className="card-footer d-flex justify-content-between"
+            >
+              <p
+                className="align-self-center mb-0"
+              >
+                ATLANTIC sealine
+              </p>
+              <h5
+                className="text-blue font-italic mb-0"
+              >
+                <span
+                  className="mr-1"
+                >
+                   $ 199 
+                </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-md-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="img-container p-5"
+            >
+              <img
+                alt="Product"
+                className="card-img-top"
+                src="p-6.png"
+              />
+            </div>
+            <button
+              className="cart-btn"
+            >
+              <i
+                className="fas fa-cart-plus"
+              />
+            </button>
+            <div
+              className="card-footer d-flex justify-content-between"
+            >
+              <p
+                className="align-self-center mb-0"
+              >
+                FESTINA Multifunction
+              </p>
+              <h5
+                className="text-blue font-italic mb-0"
+              >
+                <span
+                  className="mr-1"
+                >
+                   $ 169 
+                </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-md-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="img-container p-5"
+            >
+              <img
+                alt="Product"
+                className="card-img-top"
+                src="p-7.png"
+              />
+            </div>
+            <button
+              className="cart-btn"
+            >
+              <i
+                className="fas fa-cart-plus"
+              />
+            </button>
+            <div
+              className="card-footer d-flex justify-content-between"
+            >
+              <p
+                className="align-self-center mb-0"
+              >
+                SEIKO Prospex
+              </p>
+              <h5
+                className="text-blue font-italic mb-0"
+              >
+                <span
+                  className="mr-1"
+                >
+                   $ 189 
+                </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1
+        className="text-center text-black text-capitalize my-3"
+      >
+        Best Sellers
+      </h1>
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="img-container p-5"
+            >
+              <img
+                alt="Product"
+                className="card-img-top"
+                src="p-2.png"
+              />
+            </div>
+            <button
+              className="cart-btn"
+            >
+              <i
+                className="fas fa-cart-plus"
+              />
+            </button>
+            <div
+              className="card-footer d-flex justify-content-between"
+            >
+              <p
+                className="align-self-center mb-0"
+              >
+                FESTINA Multifunction
+              </p>
+              <h5
+                className="text-blue font-italic mb-0"
+              >
+                <span
+                  className="mr-1"
+                >
+                   $ 169 
+                </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-md-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="img-container p-5"
+            >
+              <img
+                alt="Product"
+                className="card-img-top"
+                src="p-7.png"
+              />
+            </div>
+            <button
+              className="cart-btn"
+            >
+              <i
+                className="fas fa-cart-plus"
+              />
+            </button>
+            <div
+              className="card-footer d-flex justify-content-between"
+            >
+              <p
+                className="align-self-center mb-0"
+              >
+                SEIKO Prospex
+              </p>
+              <h5
+                className="text-blue font-italic mb-0"
+              >
+                <span
+                  className="mr-1"
+                >
+                   $ 189 
+                </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-md-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="img-container p-5"
+            >
+              <img
+                alt="Product"
+                className="card-img-top"
+                src="p-4.png"
+              />
+            </div>
+            <button
+              className="cart-btn"
+            >
+              <i
+                className="fas fa-cart-plus"
+              />
+            </button>
+            <div
+              className="card-footer d-flex justify-content-between"
+            >
+              <p
+                className="align-self-center mb-0"
+              >
+                CASSIO Classic
+              </p>
+              <h5
+                className="text-blue font-italic mb-0"
+              >
+                <span
+                  className="mr-1"
+                >
+                   $ 169 
+                </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-md-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="img-container p-5"
+            >
+              <img
+                alt="Product"
+                className="card-img-top"
+                src="p-6.png"
+              />
+            </div>
+            <button
+              className="cart-btn"
+            >
+              <i
+                className="fas fa-cart-plus"
+              />
+            </button>
+            <div
+              className="card-footer d-flex justify-content-between"
+            >
+              <p
+                className="align-self-center mb-0"
+              >
+                ATLANTIC sealine
+              </p>
+              <h5
+                className="text-blue font-italic mb-0"
+              >
+                <span
+                  className="mr-1"
+                >
+                   $ 199 
+                </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

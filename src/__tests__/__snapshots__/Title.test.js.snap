@@ -18,3 +18,22 @@ exports[`Title should render correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`Title should render without crash 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-10 mx-auto my-2 text-center text-title"
+  >
+    <h1
+      className="text-capitalize font-weight-bold py-5"
+    >
+       
+      <strong
+        className="text-blue"
+      />
+    </h1>
+  </div>
+</div>
+`;

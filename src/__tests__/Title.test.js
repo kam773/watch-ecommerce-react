@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import {shallow, mount} from 'enzyme';
 
 describe("Title", () => {
-    it('should render correctly', () => {
+    it('should render without crash', () => {
         const tree = renderer.create(<Title/>).toJSON();
         expect(tree).toMatchSnapshot();
     });
