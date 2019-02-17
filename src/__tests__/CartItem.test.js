@@ -44,4 +44,12 @@ describe("CartItem", () => {
       const wrapper = shallow(<CartItem {...props}/>)
       expect(wrapper.find('img')).toHaveLength(1);
     });
+    it('has 1 icon element', () => {
+        const props = {
+            item: {},
+            value: {}
+        }
+      const wrapper = shallow(<CartItem {...props}/>)
+      expect(wrapper.find('i').hasClass('fas fa-trash')).toEqual(true);
+    });
 });
