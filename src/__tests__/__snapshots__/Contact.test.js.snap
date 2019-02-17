@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact renders without crashes 1`] = `
+<section
+  className="container-fluid"
+>
+  <h1
+    className="text-center text-black text-capitalize my-3"
+  >
+    Contact us
+  </h1>
+  <div
+    className="sc-bdVaJa iZvBxM"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-4"
+      >
+        <div
+          className="address-box my-3"
+        >
+          <div
+            className="address my-3"
+          >
+            <h5>
+              Address
+            </h5>
+            <p>
+              The company name,
+              <span>
+                Lorem ipsum dolor,
+              </span>
+              Glasglow Dr 40 Fe 72.
+            </p>
+          </div>
+          <div
+            className="address my-3"
+          >
+            <h5>
+              Address1
+            </h5>
+            <p>
+              Tel:1115550001,
+              <span>
+                Fax:190-4509-494
+              </span>
+              Email: 
+              <a
+                href="mailto:example@email.com"
+              >
+                contact@example.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <section
+        className="col-md-8"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-12 mb-md-0 mb-5"
+          >
+            <form
+              action="mail.php"
+              id="contact-form"
+              method="POST"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-6"
+                >
+                  <div
+                    className="md-form my-3"
+                  >
+                    <input
+                      className="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="col-md-6"
+                >
+                  <div
+                    className="md-form my-3"
+                  >
+                    <input
+                      className="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-12"
+                >
+                  <div
+                    className="md-form my-3"
+                  >
+                    <input
+                      className="form-control"
+                      id="subject"
+                      name="subject"
+                      placeholder="Subject"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-12"
+                >
+                  <div
+                    className="md-form my-3"
+                  >
+                    <textarea
+                      className="form-control md-textarea"
+                      id="message"
+                      name="message"
+                      placeholder="Message"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div
+              className="my-3"
+            >
+              <a
+                className="btn"
+              >
+                Send
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+`;
