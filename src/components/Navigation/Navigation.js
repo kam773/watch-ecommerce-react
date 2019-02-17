@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
       <React.Fragment>
           <div className="brand">
-              <h1 className="text-center my-5 brand-header">Luxury Watches</h1>
+              <h1 style={{ textTransform: 'uppercase', letterSpacing: '3px', fontWeight: '400' }} className="text-center my-5 brand-header">Luxury Watches</h1>
           </div>
           <NavWapper>
             <div className="container-fluid">
@@ -43,13 +43,8 @@ const NavWapper = styled.nav`
 .brand {
   width: 100%;
   display: block;
-
 }
-.brand-header {
-  text-transform: uppercase!important;
-  color: #FFD700!important;
 
-}
 ul {
   list-style: none;
   li{
