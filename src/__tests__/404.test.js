@@ -1,6 +1,6 @@
 import React from 'react';
 import Default from '../components/404/Default';
-import {shallow, mount} from 'enzyme';
+import {shallow} from 'enzyme';
 import renderer from 'react-test-renderer';
 
 describe("404", () => {
