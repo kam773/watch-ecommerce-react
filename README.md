@@ -27,6 +27,7 @@ Application built with React + Context API
 * React
 * Context API
 * React Router
+* Jest + Enzyme
 * React-Bootstrap
 * styled components
 
