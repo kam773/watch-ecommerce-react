@@ -14,5 +14,15 @@ Application built with React + Context API
 
 
 
-![Cart](screenshots/watchlist screenshot.png?raw=true)
+![List](screenshots/watchlist.png?raw=true)
+![Detail](screenshots/detail.png?raw=true)
+![Module](screenshots/module.png?raw=true)
 ![Cart](screenshots/cart.png?raw=true)
+
+## Technologies
+
+* React
+* Context API
+* React Router
+* React-Bootstrap
+* styled components
