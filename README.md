@@ -2,7 +2,7 @@
 
 Application built with React + Context API
 
-[Demo](https://immense-fortress-83035.herokuapp.com/)
+[Demo](https://immense-fortress-83035.herokuapp.com)
 
 # What is inside?
 
