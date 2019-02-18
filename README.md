@@ -13,4 +13,6 @@ Application built with React + Context API
 * Cart page with PayPal checkout button/ clear cart option
 
 
-![](screenshots/cart.png?raw=true)
+
+![Cart](screenshots/watchlist screenshot.png?raw=true)
+![Cart](screenshots/cart.png?raw=true)
