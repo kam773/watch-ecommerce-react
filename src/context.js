@@ -154,7 +154,8 @@ export default class ProductProvider extends Component {
             increment: this.increment,
             decrement: this.decrement,
             removeItem: this.removeItem,
-            clearCart: this.clearCart
+            clearCart: this.clearCart,
+            addTotals: this.addTotals
         }}>
 
               {this.props.children}

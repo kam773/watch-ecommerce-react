@@ -1,60 +1,88 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Form from '../Form/Form';
-import {Nav, Navbar} from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
+import {
+  Container,
+  Row,
+  Col
+} from 'reactstrap';
+import { Button, Navbar, FormControl, Nav } from 'react-bootstrap';
 
-export default function Navigation() {
-  return (
+class Navigation extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+      this.setState({
+          isOpen: !this.state.isOpen
+      });
+  }
+  render() {
+    return (
       <React.Fragment>
           <div className="brand">
-              <h1 style={{ textTransform: 'uppercase', letterSpacing: '3px', fontWeight: '400' }} className="text-center my-5 brand-header">Luxury Watches</h1>
+              <h1 className="text-center my-5 brand-header">Luxury Watches</h1>
           </div>
           <NavWapper>
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-md-8">
-                    <Navbar className="mb-2" bg="white" variant="white">
-                      <Nav className="mr-auto">
-                        <Nav.Link href="#home"><Link className="nav-link ml-3" to="/">Home</Link></Nav.Link>
-                        <Nav.Link href="#features"><Link className="nav-link ml-3" to="/men">Men</Link></Nav.Link>
-                        <Nav.Link href="#pricing"><Link className="nav-link ml-3" to="/women">Women</Link></Nav.Link>
-                        <Nav.Link href="#pricing"><Link className="nav-link ml-3" to="/kids">Kids</Link></Nav.Link>
-                        <Nav.Link href="#pricing"><Link className="nav-link ml-3" to="/contact">Contact</Link></Nav.Link>
-                      </Nav>
-                    </Navbar>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="search-box mt-3">
-                          <Form/>
-                      </div>
-                    </div>
-              </div>
-            </div>
+              <Container>
+                <Row>
+                  <Col md="12">
+                  <Navbar bg="white" variant="light" expand="lg" className="my-3">
+                  <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                      <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto">
+                    <Nav.Item className="ml-3">
+                        <NavLink className="nav-link" to="/">Home</NavLink>
+                    </Nav.Item>
+                    <Nav.Item className="ml-3">
+                        <NavLink className="nav-link" to="/men">Men</NavLink>
+                    </Nav.Item>
+                    <Nav.Item className="ml-3">
+                        <NavLink className="nav-link" to="/women">Women</NavLink>
+                    </Nav.Item>
+                    <Nav.Item className="ml-3">
+                        <NavLink className="nav-link" to="/kids">Kids</NavLink>
+                    </Nav.Item>
+                    <Nav.Item className="ml-3">
+                        <NavLink className="nav-link" to="/contact">Contact</NavLink>
+                    </Nav.Item>
+                    </Nav>
+                    <Form inline>
+                      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                      <Button variant="outline-primary">Search</Button>
+                    </Form>
+                    </Navbar.Collapse>
+                  </Navbar>
+                  </Col>
+                </Row>
+              </Container>
           </NavWapper>
       </React.Fragment>
-  )
+    )
+  }
+
 }
 
 const NavWapper = styled.nav`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 .brand {
   width: 100%;
   display: block;
 }
-
-ul {
-  list-style: none;
-  li{
-    display: inline-block;
-  }
-}
 .nav-link {
   color: #000!important;
   font-size: 1.2rem;
-
 }
-
+.brand-header {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
 `;
+
+export default Navigation;
