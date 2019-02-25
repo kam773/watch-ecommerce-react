@@ -26,10 +26,10 @@ class Navigation extends React.Component {
   render() {
     return (
       <React.Fragment>
-          <div className="brand">
-              <h1 className="text-center my-5 brand-header">Luxury Watches</h1>
-          </div>
           <NavWapper>
+            <div className="brand">
+                <h1 className="text-center my-5 brand-header">Luxury Watches</h1>
+            </div>
               <Container>
                 <Row>
                   <Col md="12">
@@ -74,15 +74,16 @@ const NavWapper = styled.nav`
   width: 100%;
   display: block;
 }
-.nav-link {
-  color: #000!important;
-  font-size: 1.2rem;
-}
 .brand-header {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
 }
+.nav-link {
+  color: #000!important;
+  font-size: 1.2rem;
+}
+
 `;
 
 export default Navigation;
