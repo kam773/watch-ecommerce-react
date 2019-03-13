@@ -2,6 +2,8 @@
 
 Application built with React + Context API
 
+## Demo
+
 [Demo](https://immense-fortress-83035.herokuapp.com/)
 
 # What is inside?
@@ -14,5 +16,25 @@ Application built with React + Context API
 
 
 
-![Cart](screenshots/watchlist screenshot.png?raw=true)
+![List](screenshots/watchlist.png?raw=true)
+
+![Detail](screenshots/detail.png?raw=true)
+
+![Module](screenshots/module.png?raw=true)
+
 ![Cart](screenshots/cart.png?raw=true)
+
+## Technologies
+
+* React
+* Context API
+* React Router
+* Jest + Enzyme
+* React-Bootstrap
+* styled components
+
+## How to use it?
+
+1. Install all dependencies `npm install`
+2. Run `npm run start` to start a server and begin developing
+3. Run `npm run build` to create a build
