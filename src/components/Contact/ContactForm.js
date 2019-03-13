@@ -57,6 +57,9 @@ export default function ContactForm() {
           </Col>
         </Row>
       </Form>
+      <div className="my-3">
+        <a className="btn">Send</a>
+      </div>
     </FormWrapper>
   );
 }

@@ -36,9 +36,6 @@ export default function Contact() {
             <Row>
               <Col md="12" className="mb-md-0 mb-5">
                 <ContactForm />
-                <div className="my-3">
-                  <a className="btn">Send</a>
-                </div>
               </Col>
             </Row>
           </Col>

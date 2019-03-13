@@ -13,19 +13,19 @@ export default function Footer() {
             </h5>
             <ul className="list my-3 text-left ml-2">
               <li className="list-item my-4">
-                <a className="d-flex flex-row" href="#">
+                <a className="d-flex flex-row align-items-center" href="#">
                   <i className="fab fa-facebook fa-2x" />
                   Facebook
                 </a>
               </li>
               <li className="list-item my-4">
-                <a className="d-flex flex-row" href="#">
+                <a className="d-flex flex-row align-items-center" href="#">
                   <i className="fab fa-twitter fa-2x" />
                   Twitter
                 </a>
               </li>
               <li className="list-item my-4">
-                <a className="d-flex flex-row" href="#">
+                <a className="d-flex flex-row align-items-center" href="#">
                   <i className="fab fa-google-plus fa-2x" />
                   Google Plus
                 </a>
