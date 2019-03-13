@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
 
 export default function EmptyCart() {
   return (
-      <div className="container my-5">
-          <div className="row my-5">
-              <div className="col-10 mx-auto text-center text-title my-5">
-                  <h1>Your cart is currently empty</h1>
-              </div>
-          </div>
-      </div>
-  )
+    <Container className="my-5">
+      <Row className="my-5">
+        <Col xs="10" className="mx-auto text-center text-title my-5">
+          <h1>Your cart is currently empty</h1>
+        </Col>
+      </Row>
+    </Container>
+  );
 }

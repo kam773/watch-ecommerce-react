@@ -1,276 +1,145 @@
-import React from 'react';
-import MySlider from '../Slider/Slider';
-import styled from 'styled-components';
-import Banner1 from '../../img/abt-1.jpg';
-import Banner2 from '../../img/abt-2.jpg';
-import Banner3 from '../../img/abt-3.jpg';
-import img1 from '../../img/p-4.png';
-import img2 from '../../img/p-2.png';
-import img3 from '../../img/p-6.png';
-import img4 from '../../img/p-7.png';
+import React from "react";
+import MySlider from "../Slider/Slider";
+import styled from "styled-components";
+import Banner1 from "../../img/abt-1.jpg";
+import Banner2 from "../../img/abt-2.jpg";
+import Banner3 from "../../img/abt-3.jpg";
+import { Container, Row, Col } from "reactstrap";
+import Product from "./Product";
+import { ProductConsumer } from "../../context";
 
 export default function Landing() {
   return (
-      <SliderContainer>
-          <MySlider/>
-          <div className="py-5">
-              <div className="container">
-                    <div className="row">
-                        <div className="col-md-4">
-                                <figure className="img-wrapper hover-effect">
-                                        <img className="img-responsive" src={ Banner1 } alt="Banner"/>
-                                        <figcaption>
-                                            <h4>Nulla maximus nunc</h4>
-                                            <p>In sit amet sapien eros Integer dolore magna aliqua</p>
-                                        </figcaption>
-                                </figure>
-                        </div>
-                        <div className="col-md-4">
-                                <figure className="img-wrapper hover-effect">
-                                        <img className="img-responsive" src={ Banner2 } alt="Banner"/>
-                                        <figcaption>
-                                            <h4>Mauris erat augue</h4>
-                                            <p>In sit amet sapien eros Integer dolore magna aliqua</p>
-                                        </figcaption>
-                                </figure>
-                        </div>
-                        <div className="col-md-4">
-                                <figure className="img-wrapper hover-effect">
-                                        <img className="img-responsive" src={ Banner3 } alt="Banner"/>
-                                        <figcaption>
-                                            <h4>Cras elit mauris</h4>
-                                            <p>In sit amet sapien eros Integer dolore magna aliqua</p>
-                                        </figcaption>
-                                </figure>
-                        </div>
-                    </div>
-                    <h1 className="text-center text-black text-capitalize my-3">featured products</h1>
-                    <div className="row">
-                            <div className="col-md-3">
-                                <div className="card">
-                                    <div className="img-container p-5">
-                                        <img src={ img1 } alt="Product" className="card-img-top"/>
-                                    </div>
-                                    <button
-                                        className="cart-btn"
-                                        >
-                                       <i className="fas fa-cart-plus"></i>
-                                    </button>
-                                        {/* Card footer */}
-                                    <div className = "card-footer d-flex justify-content-between">
-                                            <p className = "align-self-center mb-0">CASSIO Classic</p>
-                                            <h5 className = "text-blue font-italic mb-0" >
-                                                <span className = "mr-1" > $ 89 </span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-3">
-                            <div className="card">
-                                    <div className="img-container p-5">
-                                        <img src={ img2 } alt="Product" className="card-img-top"/>
-                                    </div>
-                                    <button
-                                        className="cart-btn"
-                                        >
-                                       <i className="fas fa-cart-plus"></i>
-                                    </button>
-                                        {/* Card footer */}
-                                    <div className = "card-footer d-flex justify-content-between">
-                                            <p className = "align-self-center mb-0">ATLANTIC sealine</p>
-                                            <h5 className = "text-blue font-italic mb-0" >
-                                                <span className = "mr-1" > $ 199 </span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-3">
-                            <div className="card">
-                                    <div className="img-container p-5">
-                                        <img src={ img3 } alt="Product" className="card-img-top"/>
-                                    </div>
-                                    <button
-                                        className="cart-btn"
-                                        >
-                                       <i className="fas fa-cart-plus"></i>
-                                    </button>
-                                        {/* Card footer */}
-                                    <div className = "card-footer d-flex justify-content-between">
-                                            <p className = "align-self-center mb-0">FESTINA Multifunction</p>
-                                            <h5 className = "text-blue font-italic mb-0" >
-                                                <span className = "mr-1" > $ 169 </span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-3">
-                            <div className="card">
-                                    <div className="img-container p-5">
-                                        <img src={ img4 } alt="Product" className="card-img-top"/>
-                                    </div>
-                                    <button
-                                        className="cart-btn"
-                                        >
-                                       <i className="fas fa-cart-plus"></i>
-                                    </button>
-                                        {/* Card footer */}
-                                    <div className = "card-footer d-flex justify-content-between">
-                                            <p className = "align-self-center mb-0">SEIKO Prospex</p>
-                                            <h5 className = "text-blue font-italic mb-0" >
-                                                <span className = "mr-1" > $ 189 </span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <h1 className="text-center text-black text-capitalize my-3">Best Sellers</h1>
-                    <div className="row">
-                            <div className="col-md-3">
-                                <div className="card">
-                                    <div className="img-container p-5">
-                                        <img src={ img2 } alt="Product" className="card-img-top"/>
-                                    </div>
-                                    <button
-                                        className="cart-btn"
-                                        >
-                                       <i className="fas fa-cart-plus"></i>
-                                    </button>
-                                        {/* Card footer */}
-                                    <div className = "card-footer d-flex justify-content-between">
-                                            <p className = "align-self-center mb-0">FESTINA Multifunction</p>
-                                            <h5 className = "text-blue font-italic mb-0" >
-                                                <span className = "mr-1" > $ 169 </span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-3">
-                            <div className="card">
-                                    <div className="img-container p-5">
-                                        <img src={ img4 } alt="Product" className="card-img-top"/>
-                                    </div>
-                                    <button
-                                        className="cart-btn"
-                                        >
-                                       <i className="fas fa-cart-plus"></i>
-                                    </button>
-                                        {/* Card footer */}
-                                    <div className = "card-footer d-flex justify-content-between">
-                                            <p className = "align-self-center mb-0">SEIKO Prospex</p>
-                                            <h5 className = "text-blue font-italic mb-0" >
-                                                <span className = "mr-1" > $ 189 </span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-3">
-                            <div className="card">
-                                    <div className="img-container p-5">
-                                        <img src={ img1 } alt="Product" className="card-img-top"/>
-                                    </div>
-                                    <button
-                                        className="cart-btn"
-                                        >
-                                       <i className="fas fa-cart-plus"></i>
-                                    </button>
-                                        {/* Card footer */}
-                                    <div className = "card-footer d-flex justify-content-between">
-                                            <p className = "align-self-center mb-0">CASSIO Classic</p>
-                                            <h5 className = "text-blue font-italic mb-0" >
-                                                <span className = "mr-1" > $ 169 </span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-3">
-                            <div className="card">
-                                    <div className="img-container p-5">
-                                        <img src={ img3 } alt="Product" className="card-img-top"/>
-                                    </div>
-                                    <button
-                                        className="cart-btn"
-                                        >
-                                       <i className="fas fa-cart-plus"></i>
-                                    </button>
-                                        {/* Card footer */}
-                                    <div className = "card-footer d-flex justify-content-between">
-                                            <p className = "align-self-center mb-0">ATLANTIC sealine</p>
-                                            <h5 className = "text-blue font-italic mb-0" >
-                                                <span className = "mr-1" > $ 199 </span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-              </div>
-
-          </div>
-      </SliderContainer>
-  )
+    <SliderContainer>
+      <MySlider />
+      <Container className="py-5">
+        <Row>
+          <Col md="4">
+            <figure className="img-wrapper hover-effect">
+              <img className="img-responsive" src={Banner1} alt="Banner" />
+              <figcaption>
+                <h4>Nulla maximus nunc</h4>
+                <p>In sit amet sapien eros Integer dolore magna aliqua</p>
+              </figcaption>
+            </figure>
+          </Col>
+          <Col md="4">
+            <figure className="img-wrapper hover-effect">
+              <img className="img-responsive" src={Banner2} alt="Banner" />
+              <figcaption>
+                <h4>Mauris erat augue</h4>
+                <p>In sit amet sapien eros Integer dolore magna aliqua</p>
+              </figcaption>
+            </figure>
+          </Col>
+          <Col md="4">
+            <figure className="img-wrapper hover-effect">
+              <img className="img-responsive" src={Banner3} alt="Banner" />
+              <figcaption>
+                <h4>Cras elit mauris</h4>
+                <p>In sit amet sapien eros Integer dolore magna aliqua</p>
+              </figcaption>
+            </figure>
+          </Col>
+        </Row>
+        <h1 className="text-center text-black text-capitalize my-3">
+          featured products
+        </h1>
+        <Row>
+          <ProductConsumer>
+            {value => {
+              return value.featured.map(product => {
+                return <Product key={product.id} product={product} />;
+              });
+            }}
+          </ProductConsumer>
+        </Row>
+        <h1 className="text-center text-black text-capitalize my-3">
+          Best Sellers
+        </h1>
+        <Row>
+          <ProductConsumer>
+            {value => {
+              return value.featured.map(product => {
+                return <Product key={product.id} product={product} />;
+              });
+            }}
+          </ProductConsumer>
+        </Row>
+      </Container>
+    </SliderContainer>
+  );
 }
 
 const SliderContainer = styled.div`
+  width: 100%;
+  height: auto;
+
+  .img-wrapper {
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
     width: 100%;
-    height: auto;
-
-    .img-wrapper {
-        position: relative;
-
-    }
-    figcaption {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #008CBA;
-        width: 100%;
-    }
-    .img-wrapper:hover figcaption {
-        opacity: .8;
-    }
-    .img-wrapper:hover figcaption h4 {
-        opacity: 1;
-    }
-    .img-wrapper:hover figcaption p {
-        opacity: 1;
-    }
-    figcaption h4 {
-        color: #fff;
-        font-size: 1.4rem;
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-transform: capitalize;
-        letter-spacing: 2px;
-        text-align: center;
-        opacity: 1;
-    }
-    figcaption p {
-        color: white;
-        font-size: 1.2rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        opacity: 1;
-        margin-top: 30px;
-        line-height: 1.4;
-    }
-    .cart-btn {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        text-align: right;
-        padding: .8rem;
-        font-size: 1.5rem;
-    }
-    .img-container {
-        position: relative;
-        overflow: hidden;
-      }
-      .card-img-top {
-        transition: all .5s linear;
-      }
-      .img-container:hover .card-img-top {
-        transform: scale(1.2);
-      }
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #008cba;
+    width: 100%;
+  }
+  .img-wrapper:hover figcaption {
+    opacity: 0.8;
+  }
+  .img-wrapper:hover figcaption h4 {
+    opacity: 1;
+  }
+  .img-wrapper:hover figcaption p {
+    opacity: 1;
+  }
+  figcaption h4 {
+    color: #fff;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: 1;
+  }
+  figcaption p {
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    margin-top: 30px;
+    line-height: 1.4;
+  }
+  .cart-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+  }
+  .img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .card-img-top {
+    transition: all 0.5s linear;
+  }
+  .img-container:hover .card-img-top {
+    transform: scale(1.2);
+  }
 `;
